@@ -1,3 +1,12 @@
+window.addEventListener('beforeunload', function (e) {
+  const confirmationMessage = 'Do you really want to leave? You have unsaved changes!';
+  
+  e.preventDefault();
+  e.returnValue = confirmationMessage; 
+  
+  return confirmationMessage;
+});
+
 import EnemyController from "./EnemyController.js";
 import Player from "./Player.js";
 import BulletController from "./BulletController.js";

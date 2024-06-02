@@ -1,3 +1,12 @@
+window.addEventListener('beforeunload', function (e) {
+    const confirmationMessage = 'Do you really want to leave? You have unsaved changes!';
+    
+    e.preventDefault();
+    e.returnValue = confirmationMessage; 
+    
+    return confirmationMessage;
+});
+
 //Board
 let board;
 let boardheight = 640;

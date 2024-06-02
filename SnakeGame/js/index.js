@@ -1,3 +1,12 @@
+window.addEventListener('beforeunload', function (e) {
+    const confirmationMessage = 'Do you really want to leave? You have unsaved changes!';
+    
+    e.preventDefault();
+    e.returnValue = confirmationMessage; 
+    
+    return confirmationMessage;
+});
+
 // Game Constants & Variables
 let inputDir = {x: 0, y: 0}; 
 const foodSound = new Audio('music/food.mp3');

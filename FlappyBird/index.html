@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <title>Flappy Bird</title>
-        <link rel="stylesheet" href="flappybird.css">
-        <script src="flappybird.js"></script>
-    </head>
-    <body>
-        <canvas id="board">
-        </canvas>
 
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="flappybird.css">
+    <script src="flappybird.js"></script>
+    
+</head>
+
+<body unload="window.alert('window loaded suceesfully')" >
+    <nav>
+        <ul>
+            <div style="display: flex; justify-content: space-between; align-items: center;" >
+                <a href="../index.html"> <img src="logo.png" height="60px" alt=""> </a>
+                <li><a style="font-size: 30px;" href="../index.html">Retro Arcade</a></li>
+            </div>
+            <li><a href="#">Flappy Bird</a></li>
+            <li><a href="../SnakeGame/index.html">Snake Game</a></li>
+            <li><a href="../SpaceInvaders/index.html">Space Invaders</a></li>
+        </ul>
+    </nav>
+    <canvas id="board">
+    </canvas>
+</body>
+
 </html>

@@ -10,6 +10,11 @@
             margin: 0;
         }
 
+        body{
+            background-image: url('bg1.png');
+            background-size: contain;
+        }
+
         nav{
             height: 60px;
             width: 100vw;
@@ -47,23 +52,33 @@
         }
 
         .games{
-            height: 40vh;
+            height: 50vh;
             width: 90vw;
             margin: auto;
-            background-color: bisque;
+            background-color: rgba(254, 244, 231, 0.212);
             display: flex;
             justify-content: space-around;
             align-items: center;
+            text-align: center;
         }
 
         .game{
             height: 95%;
             width: 30%;
-            background-color: blue;
+            /* background-color: blue; */
+            cursor: pointer;  display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: white;
         }
 
-        .game1{
-            background-image: url('flappy.png');
+        .game img{
+            height: 85%;
+            width: 100%;
+        }
+
+        /* .game1{
+            background-image: url('flappyb.png');
             background-size: cover;
         }
         .game2{
@@ -73,29 +88,36 @@
         .game3{
             background-image: url('space.png');
             background-size: cover;
-        }
+        } */
 
     </style>
 </head>
 <body>
     <nav>
         <ul>
+            <div style="display: flex; justify-content: space-between; align-items: center;" >
+                <a href="#"> <img src="logo.png" height="60px" alt=""> </a>
+                <li><a style="font-size: 30px;" href="#">Retro Arcade</a></li>
+            </div>
             <li><a href="FlappyBird/index.html">Flappy Bird</a></li>
-            <li><a href="SnakeGame/">Snake Game</a></li>
-            <li><a href="SpaceInvaders/">Space Invaders</a></li>
+            <li><a href="SnakeGame/index.html">Snake Game</a></li>
+            <li><a href="SpaceInvaders/index.html">Space Invaders</a></li>
         </ul>
     </nav>
     <div id="section">
-        <h2>Which Game Do you Want to Play</h2>
+        <h1 style="color: aliceblue;" ><span style="color: black;">Which Game</span> Do you Want to Play</h1>
         <div class="games">
             <div class="game1 game">
-                <h4>Flappy Bird</h4>
+                <h1>Flappy Bird</h1>
+                <a href="FlappyBird/index.html"> <img src="flappyb.png" alt="" srcset=""> </a>
             </div>
             <div class="game2 game">
-                <h4>Snake Game</h4>
+                <h1>Snake Game</h1>
+                <a href="SnakeGame/index.html"> <img src="snake.png" alt=""> </a>
             </div>
             <div class="game3 game">
-                <h4>Space Invaders</h4>
+                <h1>Space Invaders</h1>
+                <a href="SpaceInvaders/index.html"> <img src="space.png" alt=""> </a>
             </div>
         </div>
     </div>
